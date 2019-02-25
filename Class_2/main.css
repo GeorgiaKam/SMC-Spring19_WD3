@@ -1,12 +1,29 @@
-.container {
-    background-color: dodgerblue
+
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.jumbotron {
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/05/09/31/banner-1571858_960_720.jpg);
+    background-size: cover;     
 }
-.row {
-    background-color: cornsilk
+.jumbotron h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 80px;
+    color: lightcoral;
 }
-[class^="col-"]:first-child {
-    background-color: aquamarine
+
+.jumbotron p {
+    font-family: 'Roboto', sans-serif;
+    color: dimgray;
 }
-[class^="col-"]:last-child {
-    background-color: salmon 
+.container p {
+    text-align: justify; 
 }
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;   
+}
+
+
