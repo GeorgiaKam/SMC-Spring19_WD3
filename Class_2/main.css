@@ -17,6 +17,12 @@
     font-family: 'Roboto', sans-serif;
     color: dimgray;
 }
+
+.card {
+    height: 660px;
+    float:none;
+
+}
 .container p {
     text-align: justify; 
 }
