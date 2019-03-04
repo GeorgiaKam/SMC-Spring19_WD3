@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Titan+One');
+
+
+.nav-link {
+    font-size: 13pt;
+}
+
+.jumbotron {
+    background-image: url(https://previews.123rf.com/images/9george/9george1707/9george170700465/82272092-animals-cats-and-dogs-vector-pattern-hand-drawn-doodles-pets-cute-cats-and-dogs-seamless-background-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+       
+}
+
+.jumbotron h1 {
+    font-family:'Titan One', cursive;
+    font-size: 80px;
+    text-shadow: black 0.07em 0.07em 0.07em;
+}
+
