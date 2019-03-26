@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('.carousel').carousel({interval: 3000, keyboard:true});
-
+    $('.modal').modal({
+        backdrop: 'static',    
+       
+    });
+    
 });
 
 $(".carousel-pauser").click(function() {

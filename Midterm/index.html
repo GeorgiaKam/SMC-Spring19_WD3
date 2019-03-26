@@ -71,15 +71,16 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
+            
           </div>
         </div>
       </div>
 
       <!--Buttons-->
 
-      <button type="button" class="btn btn-outline-info carousel-pauser">Pause</button>
+      <button type="button" class="btn carousel-pauser mr-0"><img src="images/pause.png"></button>
 
-      <button type="button" class="btn btn-outline-success modal-popper">Newsletter</button>
+      <button type="button" class="btn modal-popper ml-0"><img src="images/news.png"></button>
 
 
       <!--3 Columns-->
@@ -108,7 +109,6 @@
 
 <!--Subscription form-->
 
-<!--Modals-->
 
 <div class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -119,17 +119,18 @@
            <span aria-hidden="true">&times;</span>
         </button>
       </div>
+      <form action="" method="GET">
       <div class="modal-body">
           <div class="container-fluid">
              
-            <form>
+          
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
         
-            </form>
+           
           </div>
 
 
@@ -137,10 +138,11 @@
       </div>
       <div class="modal-footer">
       
-        <button type="button" class="btn btn-primary">Sign Up</button>
+        <button type="submit" class="btn btn-primary" data-dismiss="modal">Sign Up</button>
 
         
       </div>
+    </form>
     </div>
   </div>
 </div>
