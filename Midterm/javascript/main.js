@@ -14,6 +14,6 @@ $('.carousel').on('slid.bs.carousel', function(event){
 $('.modal-popper').click(function(){
     $('.modal').modal({
       backdrop: 'static'
-      //backdrop; 'static' will not close it if you click outside, 'true' will close it 
+     
   });
 });
