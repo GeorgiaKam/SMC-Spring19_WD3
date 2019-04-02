@@ -1,4 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
 .carousel-pauser {
     float: left;
     
+}
+
+.container text-center {
+    max-height: 50px;
+}
+.circle {
+    max-width: 200px;
+}
+
+.img-fluid img-thumbnail{
+    max-height: 5px;
+}
+.kits{
+font-family: 'Amatic SC', cursive;
+font-size: 35pt; 
+
+}
+.threecol{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30pt; 
+    
+    }
+
+.threecolp{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12pt;
+
+} 
+.btn {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 10pt;
+    
+  
+}
+.modal{
+    background-color:#b486a04d;
+}
+.modal-content{
+    background-color:#e1bfd2;
+}
+.form-control{
+    background-color:#e4d5dd;  
+}
+.modal-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25pt; 
+    color: #cf3697;  
+}
+.form-group {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12pt;  
+}
+
+.navbar-brand {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25pt;   
+}
+.collapse {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12pt; 
+}
+
+.nav-link {
+    color: #cf3697;
+    
+}
+a:hover {
+    color: #121416;
+  }
+.navbar-light .navbar-toggler {
+    
+    border-color: #cf3697;
+}
+.btn-outline-dark:hover {
+  
+    background-color: #cf3697;
+}
+
+.btn-outline-dark {
+   
+    border-color: #cf3697;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(215, 48, 148, 0.25);
+}
+
+.carouselp{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11pt; 
+}
+.carouselh{
+    font-family: 'Amatic SC', cursive;
+    font-size: 75pt; 
+    
+}
+.carousel-caption {
+
+    
+    bottom: 235px;
+    z-index: 10;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    color: #d22a89;
+    text-align: center;
+    background-color: #fffc;
+   
+
+}
+
+.jumbotron {
+    background-image: url("../images/jumb.png");
+    background-size: cover;
+  }
+.display-4{
+    font-family: 'Amatic SC', cursive;
+    font-size: 65pt;
+    color: #d22a89;
+
+      
+}
+.lead {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12pt; 
+    margin-left: 0.75rem;
+  
+}
+.container jumbotron{
+    
+}
+.featurette-heading{
+    font-family: 'Amatic SC', cursive;
+    font-size: 35pt; 
+      
+}
+.list-unstyled{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12pt; 
+    margin-left: 0.75rem;  
+}
+.font-italic{
+    color: #d22a89;
+}
+.card-body{
+    font-family: 'Nanum Gothic', sans-serif;
+    
+
+}
+.tableh{
+    font-family: 'Amatic SC', cursive;
+    font-size: 35pt; 
+          
+}
+.table {
+    font-family: 'Nanum Gothic', sans-serif; 
+    background-color: #d8559f33;  
+}
+
+.commentsh{
+    font-family: 'Amatic SC', cursive;
+    font-size: 35pt;    
+}
+.media{
+    font-family: 'Nanum Gothic', sans-serif;   
+}
+.mt-0{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12pt;  
+}
+.comment{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 10pt;   
 }

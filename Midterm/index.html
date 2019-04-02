@@ -9,26 +9,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Hello, world!</title>
+    <title>Bellwether</title>
   </head>
   <body>
     
     <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <a class="navbar-brand" href="#">Bellwether</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/about.html">About</a>
+                </li>
+                <li class="nav-item">   
+                  <a class="nav-link" href="pages/shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/ourteam.html">Our team</a>
+                  </li>
+              </ul>
+        
+          
+        </div>
+      </nav>
 
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active text-dark" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/about.html">About</a>
-        </li>
-        <li class="nav-item">   
-          <a class="nav-link" href="pages/shop.html">Shop</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/ourteam.html">Our team</a>
-          </li>
-      </ul>
+
+    
 
       <!--Carousel-->
 
@@ -44,22 +57,22 @@
               <div class="carousel-item active">
                 <img src="images/car_1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h class="carouselh">Lulu Blanket</h>
+                  <p class="carouselp">Our ‘Lulu Blanket’ is the perfect accessory to add warmth and style to any room.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/car_2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h class="carouselh">Large Rectangular</h>
+                  <p class="carouselp">Wool Couture’s ‘Large Rectangular’ Loom – a perfect gift for you or your friend.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/car_3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h class="carouselh">Epic Extreme</h>
+                  <p class="carouselp">Wool Couture’s ’Epic Extreme’ pure merino yarn is perfect for giant knitting. </p>
                 </div>
               </div>
             </div>
@@ -84,25 +97,35 @@
 
 
       <!--3 Columns-->
-      <div class="container">
+      <div class="container text-center mb-5">
+        <div class="row my-5">
+          <div class="col">
+          <h2 class="kits">Explore our DIY Kits.</h2>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          <img src="images/circle1.jpg" class="circle img-thumbnail rounded-circle shadow mb-4">
+          <h3 class="threecol">Jumper Baby</h3>
+          <p class="threecolp text-center mx-1 my-4">Our Blossom Jumper Baby Knitting Kit is part of our new baby collection using our Beau Baby DK Yarn.
+              Super soft on your baby’s skin and machine washable.             
+              Looking for a gift for a friends baby? Give them this handmade by you baby sweater.
+              </p>
+          <p><a class="btn btn-outline-dark shadow mb-2" href="#" role="button">View details</a></p>
         </div>
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          <img src="images/circle2.jpeg" class="circle img-thumbnail rounded-circle shadow mb-4">
+          <h3 class="threecol">Macrame Bunting</h3>
+          <p class="threecolp text-center mx-1 my-4">Welcome to the wonderful world of Macrame.
+              Our Isabella kit includes everything you need to make your own macrame bunting.              
+              If you have been wanting to learn, this kit provides guidance and all the materials you will need to get you started.</p>
+          <p><a class="btn btn-outline-dark shadow mb-2" href="#" role="button">View details</a></p>
         </div>
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <img src="images/circle3.jpg" class="circle img-thumbnail rounded-circle shadow mb-4">
+            <h3 class="threecol">Lionel Lamb</h3>
+          <p class="threecolp text-center mx-1 my-4">Need a cuddle? Our cute oversized bunny is a perfect friend for a big cuddle.  Standing at over 60cm tall from head to toes she is one big cuddly friend! Our Mabel Bunny needed a friend and we are so pleased to welcome to our oversized Lamb.</p>
+          <p><a class="btn btn-outline-dark shadow mb-2" href="#" role="button">View details</a></p>
         </div>
       </div>
       </div>
@@ -125,8 +148,8 @@
              
           
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
         
@@ -138,7 +161,7 @@
       </div>
       <div class="modal-footer">
       
-        <button type="submit" class="btn btn-primary" data-dismiss="modal">Sign Up</button>
+        <button type="submit" class="btn btn-outline-dark" data-dismiss="modal">Sign Up</button>
 
         
       </div>
