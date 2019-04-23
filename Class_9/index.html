@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .invalid-feedback, .valid-feedback {
+            display: block;
+        }
+    </style>
+    <title>Class Select</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Select your next class!</h1>
+            </div>
+        </div>
+
+       
+
+        <!--<div class="row">
+            <div class="col">
+
+                   <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="subject" id="subject" value="english">
+                        <label class="form-check-label" for="subject">English</label>
+                   </div>
+                   <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="subject" id="subject" value="geography">
+                        <label class="form-check-label" for="subject">Geography</label>
+                   </div>
+                   <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="subject" id="subject" value="history">
+                        <label class="form-check-label" for="subject">History</label>
+                   </div>
+                   <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="subject" id="subject" value="mathematics">
+                        <label class="form-check-label" for="subject">Mathematics</label>
+                   </div>
+                   <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="subject" id="subject" value="philosophy">
+                        <label class="form-check-label" for="subject">Philosophy</label>
+                   </div>
+                
+            </div> 
+        </div> --> 
+             
+            <div class="row">
+                <div class="col">   
+
+                <form action="form-process.php" method="POST">
+                    <div class="form-group">
+                    <label for="subject">Select the subject:</label>
+                    <select class="form-control" id="subject" name="subject" required>
+                        <option value=''>Select ...</option>
+                        <option value="english">English</option>
+                        <option value="geography">Geography</option>
+                        <option value="history">History</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="philosophy">Philosophy</option>
+                    </select>
+                    </div>
+
+
+               
+                    <div class="form-group">
+                    <label for="course">Select the course:</label>
+                    <select class="form-control" id="course" name="course" required disabled>
+                        <option></option>
+                    </select>
+                    </div> 
+
+
+            
+    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+
+                </form>
+                    
+                   
+
+                  
+                  
+                 
+                    
+                          
+             
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var english = ["ENGL 1", "ENGL 2", "ENGL 20", "ENGL 28"];
+            var geography = ["GEOG 1", "GEOG 2", "GEOG 4", "GEOG 8", "GEOG 11"];
+            var history = ["HIST 1", "HIST 2", "HIST 3", "HIST 6", "HIST 10", "HIST 12"];
+            var mathematics = ["MATH 18", "MATH 21", "MATH 54"];
+            var philosophy = ["PHILOS 1", "PHILOS 2", "PHILOS 4", "PHILOS 7"];
+            $("#subject").change(function(){
+                var currentSelect = $(this).val();
+                var innerContent = "";
+                $('#course').removeAttr('disabled');
+                switch(currentSelect){
+                    case "english":
+                        for(var i = 0; i < english.length; i++){
+                            innerContent += '<option value="' + english[i].toLowerCase() + '">' + english[i] + "</option>";
+                        }
+                        break;
+                    case "geography":
+                        for(var i = 0; i < geography.length; i++){
+                            innerContent += '<option value="' + geography[i].toLowerCase() + '">' + geography[i] + "</option>";
+                        }
+                        break;
+                    case "history":
+                        for(var i = 0; i < history.length; i++){
+                            innerContent += '<option value="' + history[i].toLowerCase() + '">' + history[i] + "</option>";
+                        }
+                        break;
+                    case "mathematics":
+                        for(var i = 0; i < mathematics.length; i++){
+                            innerContent += '<option value="' + mathematics[i].toLowerCase() + '">' + mathematics[i] + "</option>";
+                        }
+                        break;
+                    case "philosophy":
+                        for(var i = 0; i < philosophy.length; i++){
+                            innerContent += '<option value="' + philosophy[i].toLowerCase() + '">' + philosophy[i] + "</option>";
+                        }
+                        break;
+                    default:
+                        break;
+                }//end of switch
+                console.log(innerContent);
+                $('#course').html(innerContent);  
+            }); // end of subject change event                                                
+       
+                 
+        });
+    </script>
+</body>
+</html> 
