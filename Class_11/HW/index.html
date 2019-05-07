@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+  
+
+    <img id="girl" width="60" height="65"
+        src="girl.png" alt="girl">
+    <canvas id="myCanvas" width="800" height="300"
+    style="border:1px solid #000000;">
+    </canvas>
+
+   
+
+<script>
+    // Grass
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#82E0AA";
+    ctx.fillRect(0,180,800,120);
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Sky
+    var grd = ctx.createLinearGradient(0,0,0,150);
+    grd.addColorStop(0,"#3498DB");
+    grd.addColorStop(1,"white");
+
+  
+    ctx.fillStyle = grd;
+    ctx.fillRect(0,0,800,180);
+
+
+    // Sun
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    
+    ctx.beginPath();
+    ctx.arc(95,75,40,0,2*Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "#F9E79F";
+    ctx.fill();
+
+    // Text
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "50px Comic Sans MS";
+    ctx.strokeText("Sunny Day!",280,90);
+
+    // Image
+
+    window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("girl");
+    ctx.drawImage(img, 550, 100, 100, 130);
+};
+    
+    
+    
+    
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas 1</title>
+<style>
+
+ body{
+    background-color: cadetblue;
+    margin: 0px;
+ }   
+ #myCanvas {
+
+     width: 100vw;
+     height: 100vw;
+ }
+</style>
+
+</head>
+
+<body>
+
+<canvas id="myCanvas">
+    This is supposed to be an interactive Canvas. Please use a newer browser!
+</canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+
+context.fillStyle = "#FFFFF";
+context.fillRect = (0,0, canvas.width, canvas.height);
+
+context.fillStyle = "#FFa099";
+context.fillRect = (100, 100, 200, 200);
+
+</script>
+
+</body>
+</html>
