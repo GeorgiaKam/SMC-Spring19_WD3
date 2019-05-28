@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+
+.cover-container {
+    background-image: url(../images/macarons_home.jpg)
+}
+
+.carousel-caption {
+    left: 65%;
+    text-align: left;
+    padding-bottom: 220PX; 
+}
+.wedding {
+    
+    left: 15%;
+    text-align: left;
+    padding-bottom: 220px;
+    right: 60%;  
+}
+
+.container {
+    max-width: 800px;
+}
+
+
+
+
+
+.site-header {
+    background-color: pink;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color:#fcdc2b91;
+    border-color: #ffc0cb;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #c189a6a8;
+    border-color:#fcdc2b9e;
+}
+.bg-light {
+    background-color: pink;
+}
+.dark-grey-text {
+    color: rgb(255, 192, 203);
+}
+.dark-grey-text:hover {
+    color: rgb(255, 192, 203);
+}
+.carousel-indicators {
+    bottom: -35px;
+}
+.carousel-indicators li {
+    background-color: rgba(87, 87, 87, 0.2);
+}
+.carousel-indicators .active {
+    background-color: rgb(87, 87, 87, 0.6);
+}
+.img-thumbnail{
+    border: 0px;
+}
+.card{
+    border: 0px;
+}
+
+/*Flipping cards*/
+
+.front{
+    
+   
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+}
+.back{
+    
+   
+    width: 200px;
+    height: 200px;
+    transform: rotateY(90deg);
+
+}
+div:hover .front {
+    animation: twirl 0.2 ease-in forwards,
+               shadow 5s infinite;
+}
+div:hover .back {
+    animation: twirl 0.2 ease-in forwards reverse,
+               shadow 5s infinite;
+}
+
+
+
+
+
+
+
+@keyframes twirl{
+    0%{transform: rotateY(0deg)}
+    100%{transform: rotateY(0deg)}
+}
+
+
+ 
+    
+    
+ 
