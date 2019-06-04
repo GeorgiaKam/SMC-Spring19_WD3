@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/main.css">
+
+    
+    <title>Macaron Shop</title>
+  </head>
+  <body onload="zeroNumber()">
+
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light rounded pb-2">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample10">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">Shop<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>                
+              </ul>
+            </div>
+            <div class="bag mr-5">
+              <a href="../pages/checkout.html"><img src="../images/shopping_bag.png" width="35px">
+              </div></a>
+              
+      
+
+          </nav>
+
+
+
+          <!--Shopping Bag Counting-->
+            <div id="box"><p id="number">0</p></div>
+
+          <!--Product Detail-->
+            <div class="container d-block mb-5">  
+                <div class="row featurette my-5">
+                        <div class="col-md-6" id="product-info">
+                          <h2 class="featurette-heading pt-5 mt-5">Beetroot<span class="text-muted"> Macaron</span></h2>
+                          <p class="lead">A gourmand macaron. A smooth beetroots. Its sweet flavour and distinguished perfume make of this macaron the world’s bestseller.</p>
+                          <button type="button" class="btn btn-secondary btn-sm" onclick="increaseNumber()">Add to cart</button>
+ 
+                         
+                        </div>
+                        <div class="col-md-6">
+                          <img src="../images/products/product_1.png" class="featurette-image img-fluid mx-auto mt-5" width="500" height="500">  
+
+                        </div>
+                  </div>
+                     
+                    </div>
+
+
+
+
+
+
+             
+         
+
+
+
+            <hr class="featurette-divider"> 
+    <!-- Carousel without animation  -->
+             
+    <div class="container pb-4 my-5">
+        <div class="row blog">
+            <div class="col-md-12">
+                <h2 class="related-title text-center mt-3 mb-4">Related Products</h2>
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators" style="margin-bottom:-65px">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1" class=""></li>
+                    </ol>
+
+                    <!-- Carousel -->
+                    <div class="carousel-inner d-none d-sm-block">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="../pages/product_1.html">
+                                        
+                                            <img src="../images/related/related_1.jpg" alt="Image" style="max-width:100%;">
+                                    
+                                    </a>
+                                </div>
+                               
+                                <div class="col">
+                                        <a href="../pages/product_2.html">
+                                            
+                                                <img src="../images/related/related_2.jpg" alt="Image" style="max-width:100%;">
+                                        
+                                        </a>
+                                    </div>
+
+                                    <div class="col">
+                                            <a href="../pages/product_3.html">
+                                                
+                                                    <img src="../images/related/related_3.jpg" alt="Image" style="max-width:100%;">
+                                            
+                                            </a>
+                                        </div>
+
+                                  <div class="col">
+                                    <a href="../pages/product_1.html">
+                                        
+                                            <img src="../images/related/related_4.jpg" alt="Image" style="max-width:100%;">
+                                    
+                                    </a>
+                                </div>     
+                              
+                            </div>
+                        
+                        </div>
+                       
+
+                        <div class="carousel-item">
+                                <div class="row">
+                                        <div class="col">
+                                            <a href="../pages/product_1.html">
+                                                
+                                                    <img src="../images/related/related_5.jpg" alt="Image" style="max-width:100%;">
+                                            
+                                            </a>
+                                        </div>
+                                       
+                                        <div class="col">
+                                                <a href="../pages/product_2.html">
+                                                    
+                                                        <img src="../images/related/related_6.jpg" alt="Image" style="max-width:100%;">
+                                                
+                                                </a>
+                                            </div>
+    
+                                            <div class="col">
+                                                    <a href="../pages/product_3.html">
+                                                        
+                                                            <img src="../images/related/related_7.jpg" alt="Image" style="max-width:100%;">
+                                                    
+                                                    </a>
+                                                </div>
+    
+                                          <div class="col">
+                                            <a href="../pages/product_1.html"></a>
+                                                
+                                                    <img src="../images/related/related_8.jpg" alt="Image" style="max-width:100%;">
+                                            
+                                            </a>
+                                        </div>     
+                                      
+                                    </div>
+                            <!--.row-->
+                        </div>
+                        
+
+                        
+
+                    </div>
+
+
+                    <div class="carousel-inner d-block d-sm-none">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="../images/related/related_1.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="../images/related/related_2.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="../images/related/related_3.jpg" alt="">
+                            </div>
+                          </div>
+
+
+                </div>
+
+            </div>
+        </div>
+</div>
+
+         
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5 pt-5">
+
+
+    <div class="container text-center text-md-left mt-5">
+
+      <div class="row mt-3 dark-grey-text">
+
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Mac-a-ron</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>A macaron or French macaroon is a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring.</p>
+  
+        </div>
+  
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Work With Us</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Corporate Gifting</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Weddings</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Party Favors</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Customized Macarons</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">About Us</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Our Story</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Customer Support Center</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">In the News</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Help</a>
+          </p>
+  
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Los Angeles, LA 10023, US</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+  
+        </div>
+  
+      </div>
+ 
+    </div>
+
+  
+  </footer>
+  <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="../javascript/main.js"></script>
+
+   <script type="text/javascript">
+    var n=0;
+    function increaseNumber(){
+      n=n+1;
+      document.getElementById('number').innerHTML=n;
+      zeroNumber();
+    }
+    function zeroNumber(){
+      if(document.getElementById('number').innerHTML==0){
+        document.getElementById('box').style.display="none";
+      }
+      else{document.getElementById('box').style.display="block";
+
+      } 
+    }
+    
+    
+    
+    </script>
+
+    </body>
+</html>

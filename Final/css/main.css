@@ -1,16 +1,137 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lato&display=swap');
+
+.title {
+    font-family: 'Cookie', cursive;
+    font-size: 35pt;
+    color: #542805d9;
+}
+
+.display-3 {
+    font-family: 'Cookie', cursive;
+    font-size: 45pt;
+    color:  #542805d9;
+}
+.jum-body{
+font-family: 'Lato', sans-serif;
+font-size: 12pt;
+color: #d09024;
+}
+.quest-title{
+    font-family: 'Cookie', cursive;
+    font-size: 45pt; 
+    color: #fa647d;
+}
+.text-muted {
+
+    color: #ffc0cb !important;
+
+}
+.display-4 {
+    font-family: 'Cookie', cursive;
+    font-size: 50pt !important;
+    color:  #542805d9;
+}
+
+.lead{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 10pt; 
+   
+    color: #cf8415;
+}
+.lead-checkout{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 10pt; 
+   
+    color: #cf8415;
+    max-width: 700px;
+    margin: auto;
+}
+.featurette-heading{
+    font-family: 'Cookie', cursive;
+    font-size: 32pt; 
+    color: #542805d9;
+}
+
+.font-weight-bold{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 12pt; 
+    color: #6d482a;
+}
+.blog-heading{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 15pt; 
+    color: #ffc0cb;
+}
+.list-group-item{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 12pt;
+    color: #6d482a;
+   
+}
+
+.blog-body{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 12pt;
+    color: #6d482a;
+   
+}
+
+
+
+.card-title{
+    font-family: 'Cookie', cursive;
+    font-size: 30pt; 
+    color: #fa647d;
+   
+
+}
+.card-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 10pt; 
+   
+    color: #6d482a;
+}
+
+
+
+.jumbotron {
+    background-color: #fae7e29e;
+}
+
+
+
+
 
 
 
 .cover-container {
-    background-image: url(../images/macarons_home.jpg)
+    color: pink;
 }
 
 .carousel-caption {
     left: 65%;
     text-align: left;
-    padding-bottom: 220PX; 
+    padding-bottom: 220PX;
+   
 }
+.carouselp{
+    font-family: 'Lato', sans-serif;
+    font-size: 10pt; 
+   
+    color: #cf8415;;
+}
+.carouselh{
+    font-family: 'Cookie', cursive;
+    font-size: 32pt; 
+    color: #542805d9;
+}
+.products-title{
+    font-family: 'Cookie', cursive;
+    font-size: 38pt; 
+        color: #f35671;}
+       
+
 .wedding {
     
     left: 15%;
@@ -19,37 +140,70 @@
     right: 60%;  
 }
 
-.container {
-    max-width: 800px;
+
+
+.related-title{
+    font-family: 'Cookie', cursive;
+    font-size: 25pt; 
+        color: #f35671;  
 }
 
 
-
+.form-row{
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt; 
+   
+    color: #6d482a !important;
+}
+.form-control{
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt; 
+   
+    color: #6d482a9d !important; 
+}
 
 
 .site-header {
     background-color: pink;
 }
 
+
+
+
 .btn-secondary:hover {
-    color: #fff;
-    background-color:#fcdc2b91;
-    border-color: #ffc0cb;
+
+    color: #fff !important;
+    background-color: #fba4b0 !important;
 }
 
 .btn-secondary {
-    color: #fff;
-    background-color: #c189a6a8;
-    border-color:#fcdc2b9e;
+    color: #fff !important;
+    background-color: #6d482ab3 !important;}
+
+.btn-light:hover {
+
+    
+    background-color: #fcdc2b91;
+    }
+
+.btn-light {
+    font-family: 'Lato', sans-serif;
+    font-size: 9pt; 
+        color: #6d482a;
+        border-color: #542805d9;
+        
+        
 }
+
 .bg-light {
     background-color: pink;
 }
 .dark-grey-text {
-    color: rgb(255, 192, 203);
-}
+
+    color: rgb(250, 100, 125);}
+    
 .dark-grey-text:hover {
-    color: rgb(255, 192, 203);
+    color: rgb(240, 149, 164);
 }
 .carousel-indicators {
     bottom: -35px;
@@ -67,46 +221,129 @@
     border: 0px;
 }
 
+.bag {
+    float: right;
+}
+
 /*Flipping cards*/
 
 .front{
     
    
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     position: absolute;
 
 }
 .back{
     
    
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     transform: rotateY(90deg);
+    bottom: 0px;
 
 }
-div:hover .front {
-    animation: twirl 0.2 ease-in forwards,
-               shadow 5s infinite;
+div.col:hover .front {
+    animation: twirl 0.1 ease-in forwards;
 }
-div:hover .back {
-    animation: twirl 0.2 ease-in forwards reverse,
-               shadow 5s infinite;
+div.col:hover .back {
+    animation: twirl 0.1 ease-in forwards;
 }
-
-
-
-
 
 
 
 @keyframes twirl{
     0%{transform: rotateY(0deg)}
-    100%{transform: rotateY(0deg)}
+    100%{transform: rotateY(90deg)}
+}
+
+/*Shopping Bag*/
+
+
+.zoom{
+    position: absolute;
+    top: 15px;
+    right: 50%;
+    max-width: 50px;
+    opacity: 0;
+    animation: zoom 1.5s ease forwards;
+}
+@keyframes zoom{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0; right: 135px}
 }
 
 
- 
+#box{
+    width: 20px;
+
+    height: 20px;
+    
+    background-color: #fba4b0;
+    
+    position: fixed;
+    
+    right: 55px;
+    
+    top: 3px;
+    
+    z-index: 9999;
+    
+    border-radius: 10px; 
+    color: white; 
+}
+#number {
+    text-align: center;
+    font-size: 10pt;
+}
+
     
     
- 
+.page-footer {
+
+    background-image: linear-gradient(white, #fee9ac91);}
+
+
+
+    .thumbnail {
+        position: relative;
+    }
+    
+    .caption {
+        position: absolute;
+        top: 45%;
+       
+        width: 50%;
+        text-align: right;
+        margin-right: 1px;
+    }
+
+#box-search{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}  
+#product-info{
+    margin: auto;
+} 
+
+#nav{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 12pt; 
+   
+    color: #fba4b0;   
+}
+.navbar{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 12pt; 
+   
+    color: #fba4b0;   
+}
+.nav-item active{
+    color: rgb(247, 247, 208) !important;
+}
+.nav-link{
+    color: tomato ;
+}
